@@ -45,6 +45,13 @@ ul {
  display: flex;
 
 }
+.Logo {
+  padding: 20px;
+  display: flex;
+}
+.Logo img {
+  display: none;
+}
 .navlinks button {
   border: none;
   color: white;
@@ -292,11 +299,9 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 40px;
+ 
 }
-.information div {
-  padding: 12px;
-}
+
 .information p{
   font-size: 20px;
   font-weight: 400;
@@ -306,7 +311,6 @@ ul {
   font-weight: 700;
 }
 .checkout-container button {
-  margin: auto 500px;
     background-color: #4DE322;
     display: block;
     width: 196px;
@@ -316,9 +320,34 @@ ul {
   font-size: 20px;
   font-weight: 700;
   color: white; 
+  margin: auto;
   margin-bottom: 20px;
 }
-
+.footer {
+  height: 399px;
+  background-color: #4DE322;
+}
+.footer .navlinks{
+  padding-top: 30px;
+}
+.footer .navlinks ul {
+  margin: auto;
+  gap: 1.5rem;
+}
+.footer-info {
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 40px;
+}
+.contact p{
+  font-size: 24px;
+  font-weight: 400;
+}
+.copyright{
+  background-color: #4DE322;
+  text-align: center;
+}
 /* Responsive Styles */
 @media (max-width: 768px) {
   .navbar {
@@ -347,6 +376,20 @@ ul {
 @media (max-width: 768px) {
   .product-card {
     flex: 1 1 100%;
+  }
+  .Logo img {
+    display: flex;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+  }
+.navbar button {
+  margin: auto 120px;
+  margin-top: 15px;
+}
+  .Logo h1 {
+    display: none;
   }
   .navbar .navlinks ul {
   display: none;
