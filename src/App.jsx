@@ -11,6 +11,7 @@ import vector1 from "./Images/Vector (1).png"
 import vector2 from "./Images/Vector (2).png"
 import vector3 from "./Images/Vector (3).png"
 import vector4 from "./Images/Vector (5).png"
+import opeyemipics from "./Images/opeyemistore.png"
 function App() {
   const [cart, setCart] = useState([]);
 
@@ -76,7 +77,7 @@ function App() {
           </div>
         </div>
         <div className="homepage">
-          <div className="imgdiv">
+          {/* <div className="imgdiv">
             <div className="text">
               <h1>
                 OPEYEMI  <br />
@@ -85,7 +86,8 @@ function App() {
               </h1>
               <p>20% discount sales on-going</p>
             </div>
-          </div>
+          </div> */}
+          <img src={opeyemipics} className='opemipics' />
           <img src={Homewirstwacth} className="displaypicture" alt="Home Wrist Watch" />
         </div>
       </section>
@@ -119,7 +121,7 @@ function App() {
                       Add to cart
                     </button>
                   </div>
-                  <img src={star} alt="star" />
+                  <img src={star} className="star" />
                 </div>
               </div>
             ))}
@@ -143,17 +145,18 @@ function App() {
                   <div className="cart-item-details">
                     <p>{item.description}</p>
                     <p className='price'>{item.price}</p>
-                    <img src={star} alt="star" />
+                    <img src={star} className="star" />
                   </div>
                 </div>
                 <div className="cartedits">
                   <div className="priceqtty">
-                    <p>Price  = {item.price} </p>
+                    <p>Price  = {item.price} 
                     <p>Qty</p>
                     <div className="dropdownbox">
                       <p>1</p>
                       <img src={dropdown} alt="dropdown" />
                     </div>
+                    </p>
                   </div>
                   <button onClick={() => handleRemoveFromCart(item)}>Remove</button>
                   <button>Edit</button>
