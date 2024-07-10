@@ -12,6 +12,7 @@ import vector2 from "./Images/Vector (2).png"
 import vector3 from "./Images/Vector (3).png"
 import vector4 from "./Images/Vector (5).png"
 import opeyemipics from "./Images/opeyemistore.png"
+import logoreplace from './Images/Vector (6).png'
 function App() {
   const [cart, setCart] = useState([]);
 
@@ -66,7 +67,8 @@ function App() {
       <section id="home">
         <div className="navbar">
           <div className="Logo">
-            <h1>Teslim</h1>
+            <h1>Opeyemi</h1>
+            <img src={logoreplace} alt="" className="logoreplace" />
           </div>
           <div className="navlinks">
             <ul>
@@ -191,8 +193,8 @@ function App() {
                 <p>
                   Name: Emmanuel Peter <br />
                   Address: No 14, Arulogun road, ojoo Ibadan <br />
-                  Phone: +2348147146537 <br />
-                  Email: adelakunteslim@gmail.com
+                  Phone: +2348131088242 <br />
+                  Email: bensonton1987@gmail.com
                   </p>
               </div>
               <div className="order-summary">
@@ -235,7 +237,7 @@ function App() {
             <div className="contact">
             <h1>Contact</h1>   
                  <p>
-                  Email: adelakunteslim@gmai.com <br />
+                  Email: adelakunteslim@gmail.com <br />
                   Adress: 12 Balogun road, Iju-ishaga, Lagos <br />
                   Phone: +2348147164537
                  </p>
